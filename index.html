@@ -13,32 +13,33 @@
     </header>
     <main>
         <form id="survey-form" action="" method="post">
-            <fieldset>
-                <label id="name-label" for="name">Enter your name <input type="text" id="name" name="fname" placeholder="John Smith"required/></label>
-                <label id="email-label" for="email">Enter your email <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com"required/></label>
-                <label id="number-label" for="number">Enter your age (optional)<input type="number" id="number" name="age" min="12" max="104" placeholder="18"/></label>
-                <label for="dropdown">
-                    Select your profession
-                    <select>
+            <div class="container">
+                <fieldset id="subject-info">
+                    <label id="name-label" for="name">Enter your name</label><input type="text" id="name" name="fname" placeholder="John Smith"required/>
+                    <label id="email-label" for="email">Enter your email</label><input type="email" id="email" name="email" placeholder="johnsmith@gmail.com"required/>
+                    <label id="number-label" for="number">Enter your age (optional)</label><input type="number" id="number" name="age" min="12" max="104" placeholder="18"/>
+                    <label for="dropdown">Select your profession</label>
+                    <select id="dropdown">
                         <option value="0">Unemployed</option>
                         <option value="1">Employed</option>
                     </select>
-                </label>
-            </fieldset>
-            <fieldset>
-                <div>
-                    <p>How satisfied are you with the service?</p>
-                    <label for="satisf-1"><input type="radio" name="satisfaction" id="satisf-1" value="0"/> Not enough</label>
-                    <label for="satisf-2"><input type="radio" name="satisfaction" id="satisf-2" value="1"> Enough</label>
-                </div>
-                <div>
-                    <p>Which of those activities spark your interest?</p>
-                    <label for="interest-1"><input type="checkbox" name="interest" id="interest-1" value="biking"/> Biking</label>
-                    <label for="interest-2"><input type="checkbox" name="interest" id="interest-2" value="coding"/> Coding</label>
-                    <label for="interest-3"><input type="checkbox" name="interest" id="interest-3" value="soccer"/> Soccer</label>
-                </div>
-                <label for="comment">Additional Comment<br/><textarea></textarea></label>
-            </fieldset>
+                    <hr/>
+                </fieldset>
+                <fieldset id="app-info">
+                    <div>
+                        <p>How satisfied are you with the service?</p>
+                        <label for="satisf-1"><input type="radio" name="satisfaction" id="satisf-1" value="0"/> Not enough</label>
+                        <label for="satisf-2"><input type="radio" name="satisfaction" id="satisf-2" value="1"> Enough</label>
+                    </div>
+                    <div>
+                        <p>Which of those activities spark your interest? (check all that apply)</p>
+                        <label for="interest-1"><input type="checkbox" name="interest" id="interest-1" value="biking"/> Biking</label>
+                        <label for="interest-2"><input type="checkbox" name="interest" id="interest-2" value="coding"/> Coding</label>
+                        <label for="interest-3"><input type="checkbox" name="interest" id="interest-3" value="soccer"/> Soccer</label>
+                    </div>
+                    <label for="comment">Additional Comment<br/><textarea></textarea></label>
+                </fieldset>
+            </div>
             <button id="submit">Submit</button>
         </form>
     </main>
